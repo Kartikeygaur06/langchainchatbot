@@ -44,6 +44,6 @@ if user_query is not None and user_query!="":
         st.markdown(user_query)
 
     with st.chat_message("AI"):
-        ai_response=get_response(user_query,st.session_state.chat_history)
+        ai_response="Ai"#get_response(user_query,st.session_state.chat_history)
         st.markdown(ai_response)
     st.session_state.chat_history.append(AIMessage(ai_response))        
